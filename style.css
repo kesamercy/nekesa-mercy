@@ -75,7 +75,7 @@ ul.topnav li.right {
 }
 
 .white-space {
-    height: 40vh;
+    height: 39vh;
 }
 
 .myinfo {
@@ -91,17 +91,26 @@ ul.topnav li.right {
     padding-bottom: 1px;
 }
 
+.status ul,
 .education ul {
     list-style: none;
 }
 
-.education ul li::before {
+.education ul li::before,
+.status ul li::before {
     content: "\2022";
     color: red;
     font-weight: bold;
     display: inline-block;
     width: 1em;
     margin-left: -1em;
+}
+
+.status {
+    background-color: lightgreen;
+    font-size: 16px;
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
 
 p {
