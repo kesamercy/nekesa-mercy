@@ -84,13 +84,6 @@ ul.topnav li.right {
     font-weight: 300;
 }
 
-.education {
-    background-color: #FFFAF0;
-    font-size: 16px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-}
-
 .status ul,
 .education ul {
     list-style: none;
@@ -107,8 +100,10 @@ ul.topnav li.right {
 }
 
 .status {
-    background-color: lightgreen;
+    background-color: #7c3467;
     font-size: 16px;
+    color: white;
+    font-weight: 400;
     padding-top: 1px;
     padding-bottom: 1px;
 }
@@ -117,10 +112,11 @@ p {
     margin-bottom: 20px;
 }
 
-.projects-section {
+
+/* .projects-section {
     overflow-y: scroll;
-    height: 1000px;
-}
+    height: 90vh;
+} */
 
 
 /* width */
