@@ -117,10 +117,11 @@ p {
     margin-bottom: 20px;
 }
 
-.projects-section {
+
+/* .projects-section {
     overflow-y: scroll;
-    height: 500px;
-}
+    height: 1000px;
+} */
 
 
 /* width */
@@ -150,4 +151,9 @@ p {
 
  ::-webkit-scrollbar-thumb:hover {
     background: #b30000;
+}
+
+a {
+    color: purple;
+    font-weight: 400;
 }
