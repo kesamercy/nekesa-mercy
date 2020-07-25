@@ -112,11 +112,11 @@ p {
     margin-bottom: 20px;
 }
 
-
-/* .projects-section {
+.projects-section {
     overflow-y: scroll;
-    height: 90vh;
-} */
+    padding-left: 80px;
+    height: 150vh;
+}
 
 
 /* width */
