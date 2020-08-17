@@ -113,9 +113,7 @@ p {
 }
 
 .projects-section {
-    overflow-y: scroll;
     padding-left: 80px;
-    height: 120vh;
 }
 
 
