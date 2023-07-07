@@ -1,268 +1,414 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Nekesa Resume</title>
+<title>Mercy Nekesa</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Handlee&family=Source+Sans+3:wght@300;400;700&family=Zeyada&display=swap"
+    rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 
 <body>
 
     <div class="content">
-        <ul id="navbar" class='topnav'>
-            <li class="logo"><img src="offical-pic.jpg" alt="Avatar"></li>
-
-            <li class='right'><a href='#contact'>Contact</a></li>
-            <li class='right'><a href='#interests'>Interests</a></li>
-            <li class='right'><a href='#past-work'>Past Work</a></li>
-            <li class='right'><a href='#projects'>Projects</a></li>
+        <ul id="navbar" class='topnav page-title'>
+            <li>
+                <h1>Mercy Nekesa</h1>
+            </li>
+            <li class=" right logo"><img src="offical-pic.jpg" alt="Avatar"></li>
         </ul>
 
+        <div class="white-space w3-padding-64">
+
+            <div class=" w3-row">
+                <div class=" w3-col l4">
+
+                    <ul>
+                        <li>I lived in Washington, DC.</li>
+                        <li>I worked in Baltimore & Boston.</li>
+                        <li>I then moved to New York.</li>
+                        <li>I now live in Kampala. Hello sun.</li>
+                    </ul>
+
+                </div>
+
+                <div class=" w3-col l4">
+
+                    <ul>
+                        <li>'20: I started <a target='_blank' href="https://rainingvegetables.com/">Raining
+                                Vegetables</a>.</li>
+                        <li>'22: I started <a target='_blank' href="https://sundetails.com/">Sundetails.</a></li>
+                        <li>'23: I lecture at <a target='_blank' href="https://ucu.ac.ug/">UCU.</a></li>
+                        <li>00: I <a target='_blank' href="https://github.com/kesamercy">code</a> and here's my <a
+                                target='_blank' href="https://rxresu.me/hotbox/mercy-nekesa">resume.</a></a></li>
+                    </ul>
+
+                </div>
+
+                <div class=" w3-col l4">
+
+                    <ul>
+                        <li>I used to run & hike.</li>
+                        <li>Then I played badmitton.</li>
+                        <li>I dabble in youtube workouts.</li>
+                        <li>I swim & now looking into aerobics.</li>
+                    </ul>
+
+                </div>
 
 
-        <div class="white-space">
-
-        </div>
-
-        <div class="myinfo w3-padding-64">
-            <p>Hello, I'm Nekesa Mercy. I enjoy working on projects that use anything Computer Science related
-                to solve real world problems. </p>
-            <br>
-
-            <div class="status">
-                <ul>
-                    <li> <strong>Now :</strong> Working full-time on my start-up Raining Vegetables. <a class="w3-text-amber" href='https://rainingvegetables.com/ug/public/index.php'>Check it out here</a></li>
-                    <li> <strong>Updates :</strong> Here's my updated resume: <a class="w3-text-white" target='_blank' href='https://rxresu.me/hotbox/mercy-nekesa'>Check it out here</a></li>
-                </ul>
             </div>
+
         </div>
 
-        <div class="w3-padding-64" id="projects">
-            <h2>Projects</h2>
-            <p><b>Note:</b> On going projects are subject to change and can be expected to have bugs
-                and incomplete full functionality.</p>
-            <div class="projects-section">
+
+        <div class=" w3-padding-48">
+
+            <!-- have 3 tabs -->
+            <div class="w3-bar w3-white w3-border w3-border-gray">
+                <button class="w3-bar-item w3-button tablink tabColor"
+                    onclick="openCity(event,'Start-up')">Start-up</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Teaching')">Teaching</button>
+                <button class="w3-bar-item w3-button tablink " onclick="openCity(event,'Blog')">Blog</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Past')">Resume</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Press')">Press</button>
+
+            </div>
+
+            <div id="Start-up" class="w3-container w3-border w3-padding-16 city">
+                <h4>Currently obsessing over creating technology for ignored markets.</h4>
+
+                <p>I believe that ignored markets hold untapped profitable opportunities. I write extensively
+                    about this concept on my <a href="http://">blog</a> which also forms the basis of my work with my
+                    companies, Raining Vegetables and
+                    Sundetails.</p>
+
+                <hr>
+
+                <h6> <a target='_blank' href="https://rainingvegetables.com/""> Raining Vegetables</a></h6>
+                <p>Raining Vegetables: A data company empowering African farmers with data-driven insights. Increase
+                    profitability,
+                    maximize yields, and drive sustainability. Join our growing community of 100+ registered farmers
+                    since our 2021 launch. Unlock the power of information for a thriving agricultural future in Africa.
+                    Check us out <a target='_blank'  href=" https://rainingvegetables.com/">here.</a>
+                    </p>
+
+                    <hr>
+
+                    <h6> <a target='_blank' href="https://sundetails.com/"> Sundetails</a></h6>
+                    <p>Sundetails is on a mission to empower micro and small businesses across the Sub-Saharan
+                        Africa region with data-driven decision-making. The key thing is growth. Our unwavering goal is
+                        to
+                        simplify growth by
+                        providing businesses with seamless access to critical insights. By leveraging our innovative
+                        platform, businesses can effortlessly analyze performance metrics, enabling them to make
+                        informed
+                        decisions that propel their growth and success. Check us out <a target='_blank'
+                            href="https://sundetails.com/">here.</a>.</p>
+
+                    <hr>
+
+            </div>
+
+
+            <div id="Blog" class="w3-container w3-border w3-padding-16 city" style="display:none">
+                <h4>My private thoughts that are now publically available.</h4>
+
+                <p>I write about things that I can't stop thinkinhg about. See all <a target='_blank'
+                        href="https://medium.com/@nekesamercy">here.</a> </p>
+
+                <hr>
+
+
+                <h6> A list of some.</h6>
+
+                <ul>
+                    <li><a target="_blank"
+                            href="https://medium.com/@nekesamercy/more-women-will-get-into-tech-if-the-agenda-is-financial-independence-5967a59400b6">
+                            Culture influences how many women get into tech careers
+                            .</a>.</li>
+
+                    <li><a target="_blank"
+                            href="https://medium.com/@nekesamercy/one-lesson-learned-from-growing-an-early-stage-startup-6b4727bdd245">
+                            One Lesson Learned from Growing an Early-Stage Startup
+                        </a>.</li>
+
+
+                    <li><a target="_blank"
+                            href="https://medium.com/@nekesamercy/i-used-to-have-imposter-syndrome-and-then-it-went-away-bcbef3c5cec3">
+                            How I dealt with severe imposter syndrome.</a>.</li>
+                </ul>
+
+                <hr>
+
+            </div>
+
+            <div id="Teaching" class="w3-container w3-border w3-padding-16 city" style="display:none">
+                <h4> I remain an educator so I can be a resource to anyone open to learn. I don't think I know it
+                    all, but
+                    whatever I know, I want to share if it can benefit someone else.</h4>
+                <hr>
+
+                <h6>Lecturer at Uganda Christian Univeristy.</h6>
+                <p>Department of Computing and Technology.</a>
+                </p>
+
+                <hr>
+
+                <h6>Visiting Lecturer Interest. (International)</h6>
+                <p>I am interested in visiting lecturer positions and have a strong passion for engaging
+                    with computer science and technology students across various locations worldwide. The world is
+                    large. Technology makes it small. I find immense fulfillment in connecting with students who
+                    are at the forefront of technological innovation. If you have any opportunities available, I would
+                    be delighted to connect and contribute. Please feel free to reach out to me <a
+                        href="mailto:mercy@sundetails.com">mercy@sundetails.com.</a>
+                </p>
+
+                <hr>
+            </div>
+
+            <div id="Press" class="w3-container w3-border w3-padding-16 city" style="display:none">
+                <h4>Times when I spoke to other people about my work - officially.</h4>
+
+                <hr>
+
+
+                <h6> A list of all.</h6>
+
+                <ul>
+                    <li><a target="_blank"
+                            href="https://www.monitor.co.ug/uganda/news/national/computer-scientist-creates-software-to-support-farmers-3848822">
+                            The Daily Monitor
+                            .</a></li>
+
+                    <li><a target="_blank" href="https://www.youtube.com/watch?v=K9sIalucYWo">
+                            Interview for Uganda Broadcasting Network
+                        </a>.</li>
+
+                </ul>
+
+                <hr>
+            </div>
 
 
 
-                <div  class="w3-padding-64 w3-padding-24">
 
-                    <h4>Agri-tech App: Raining Vegetables</h4>
-                    <p>Raining Vegetables provides services that make it easy for farmers to grow and sell food. We work with farmers in Uganda to use modern methods of farming so we can increase the quality and quantity of food grown. Our commitment is that no farmer should go through the labour of growing food to feed our nation and then lack a place to sell it for profit.</p>
-                    <div class="w3-card-4" style="width:100%">
-                        <a target="_blank" href="https://rainingvegetables.com/ug/public/index.php">
-                            <img src="Rv-home.png" alt="Person" style="width:100%"> </a>
-                        <div class="w3-container">
-                            <p>
+            <div id="Past" class="w3-container w3-border w3-padding-16 city" style="display:none">
+                <h4>CV/Resume</h4>
 
-                            <p><span class="w3-tag w3-amber">Live</span></p>
+                <p>Complete list of everything I've done to pay the bills: See my <a target='_blank'
+                        href="https://rxresu.me/hotbox/mercy-nekesa">resume</a>.
+                </p>
 
-                        </div>
+                <hr>
 
+                <div class="w3-padding-16" id="projects">
+                    <h5>Personal projects I worked on in the past.</h5>
 
-                    </div>
+                    <div class="w3-padding-16 w3-padding-16">
 
-
-
-                    <div class="w3-padding-64">
-
-
-                        <h4 class="">Mental Health Application</h4>
-                        <p>Journey to mental wealth is a platform where people can find links about different forms of mental abuse and resources of how they can get help. This project is part of a bigger cause which is to raise awareness about mental health
+                        <h6 class="">Mental Health Application</h6>
+                        <p>Journey to mental wealth is a platform where people can find links about different
+                            forms of mental abuse and resources of how they can get help. This project is part
+                            of a bigger cause which is to raise awareness about mental health
                             and share resources on how we can help one another cope.
                         </p>
                         <div class="w3-card-4" style="width:100%">
 
-                                <img src="J2MW.png" alt="Person" style="width:100%">
+                            <img src="J2MW.png" alt="Person" style="width:100%">
                             <div class="w3-container">
                                 <p>
-                                    <a href="https://github.com/software-for-change/mental-health" target="_blank">Code on Github</a> </p>
+                                    <a target='_blank' href="https://github.com/software-for-change/mental-health"
+                                        target="_blank">Code
+                                        on Github</a>
+                                </p>
                                 <p><span class="w3-tag w3-teal">On-going</span></p>
                             </div>
 
 
                         </div>
-                    </div>
 
-                    <div class="w3-padding-64">
+                        <div class="w3-padding-64">
 
 
-                        <h4 class="">Hospital Translator Application</h4>
-                        <p>Google translate currently only supports 13 of 2000 African languages. Realizing this, I developed the medical translator which allows doctors to interview patients based on the Review of Systems (ROS) medical forms. The application
-                            enables patients to hear the doctor's questions in their native African languages which allows them to respond appropriately. The application assists in preliminary communication between the doctor and the patient.
-                        </p>
-                        <div class="w3-card-4" style="width:100%">
+                            <h6 class="">Hospital Translator Application</h6>
+                            <p>Google translate currently only supports 13 of 2000 African languages. Realizing
+                                this, I developed the medical translator which allows doctors to interview patients
+                                based on the Review of Systems (ROS) medical forms. The application
+                                enables patients to hear the doctor's questions in their native African languages
+                                which allows them to respond appropriately. The application assists in preliminary
+                                communication between the doctor and the patient.
+                            </p>
+                            <div class="w3-card-4" style="width:100%">
 
                                 <img src="The-Wasolo.png" alt="Person" style="width:100%">
-                            <div class="w3-container">
-                                <p>
-                                    <a href="https://github.com/kesamercy/thewasolo" target="_blank">Code on Github</a> </p>
-                                <p><span class="w3-tag w3-teal">On-going</span></p>
+                                <div class="w3-container">
+                                    <p>
+                                        <a target='_blank' href="https://github.com/kesamercy/thewasolo"
+                                            target="_blank">Code on
+                                            Github</a>
+                                    </p>
+                                    <p><span class="w3-tag w3-teal">On-going</span></p>
+                                </div>
+
+
                             </div>
-
-
                         </div>
-                    </div>
 
-                    <div class="w3-padding-64">
+                        <div class="w3-padding-64">
 
 
-                        <h4 class="">Patient Portal</h4>
-                        <p>The patient portal is part of the Hospital translator application. This portal is where patients provide their responses to the doctor's ROS form questions.</p>
-                        <div class="w3-card-4" style="width:100%">
+                            <h6 class="">Patient Portal</h6>
+                            <p>The patient portal is part of the Hospital translator application. This portal is
+                                where patients provide their responses to the doctor's ROS form questions.</p>
+                            <div class="w3-card-4" style="width:100%">
 
                                 <img src="patient-portal.png" alt="Person" style="width:100%">
-                            <div class="w3-container">
-                                <p>
-                                    <a href="https://github.com/kesamercy/thewasolo/tree/master/patient" target="_blank">Code on Github</a> </p>
-                                <p><span class="w3-tag w3-teal">On-going</span></p>
+                                <div class="w3-container">
+                                    <p>
+                                        <a target='_blank'
+                                            href="https://github.com/kesamercy/thewasolo/tree/master/patient"
+                                            target="_blank">Code on Github</a>
+                                    </p>
+                                    <p><span class="w3-tag w3-teal">On-going</span></p>
+                                </div>
+
+
                             </div>
-
-
                         </div>
-                    </div>
 
-                    <div class="w3-padding-64">
+                        <div class="w3-padding-64">
 
 
-                        <h4 class="">Machine Translation Algorithm to translate ROS forms to African Languages</h4>
-                        <p>To provide faster translation for the Hospital Translator Application, I explored using LSTM techniques to create a model that could automatically translate the ROS form from an one language to another. For my test case, I used
-                            an algorithm to translate the ROS form from Swahili to English. So far, I have had some success with the results of translation. The algorithm will continue to be improved upon achieving better results.</p>
-                        <div class="w3-card-4" style="width:100%">
+                            <h6 class="">Machine Translation Algorithm to translate ROS forms to African Languages
+                            </h6>
+                            <p>To provide faster translation for the Hospital Translator Application, I explored
+                                using LSTM techniques to create a model that could automatically translate the ROS
+                                form from an one language to another. For my test case, I used
+                                an algorithm to translate the ROS form from Swahili to English. So far, I have had
+                                some success with the results of translation. The algorithm will continue to be
+                                improved upon achieving better results.</p>
+                            <div class="w3-card-4" style="width:100%">
 
-                            <div class="w3-container">
-                                <p>
-                                    <a href="https://github.com/kesamercy/ROS-form-translation-model/blob/master/RNN%20(LSTM)%20Encoder-Decoder%20Algorithm-FINAL.ipynb" target="_blank">Code on Github</a> </p>
-                                <p><span class="w3-tag w3-teal">On-going</span></p>
+                                <div class="w3-container">
+                                    <p>
+                                        <a target='_blank'
+                                            href="https://github.com/kesamercy/ROS-form-translation-model/blob/master/RNN%20(LSTM)%20Encoder-Decoder%20Algorithm-FINAL.ipynb"
+                                            target="_blank">Code on Github</a>
+                                    </p>
+                                    <p><span class="w3-tag w3-teal">On-going</span></p>
+                                </div>
+
+
                             </div>
-
-
                         </div>
-                    </div>
 
-                    <div class="w3-row-padding">
+                        <div class="w3-row-padding">
 
 
-                        <h4 class="">Concert Seat Assignment</h4>
-                        <p>Concert Seat Assignment program assigns the best seat available (closest to front and middle) at a concert venue. When a user selects a concert venue and the number of seats they would like, the program assigns them the best next available seat.
-                        </p>
-                        <div class="w3-card-4" style="width:100%">
+                            <h6 class="">Concert Seat Assignment</h6>
+                            <p>Concert Seat Assignment program assigns the best seat available (closest to front and
+                                middle) at a concert venue. When a user selects a concert venue and the number of
+                                seats they would like, the program assigns them the best next available seat.
+                            </p>
+                            <div class="w3-card-4" style="width:100%">
                                 <img src="Concert-Seats.png" alt="Concert seat assignment page" style="width:100%">
-                            <div class="w3-container">
-                                <p>
-                                    <a href="https://github.com/kesamercy/concert-seat-assignment" target="_blank">Code on Github</a> </p>
+                                <div class="w3-container">
+                                    <p>
+                                        <a target='_blank' href="https://github.com/kesamercy/concert-seat-assignment"
+                                            target="_blank">Code on Github</a>
+                                    </p>
+                                </div>
+
+
                             </div>
-
-
                         </div>
-                    </div>
 
-                    <div class="w3-padding-64">
+                        <div class="w3-padding-64">
 
-                        <h4 class="">Tutoring Serivces For Computer Science Students</h4>
-                        <p>UB Tutoring is a place where CS students could sign up for a private tutor and recieve help with CS topics. This was a senior year team project. You can find my contributions <a target="_blank" href="https://github.com/cse442-spring-2020-offering/cse442-semester-project-jalapenocrisp/commits?author=kesamercy">here.</a>                            </p>
-                        <div class="w3-card-4" style="width:100%">
+                            <h6 class="">Tutoring Serivces For Computer Science Students</h6>
+                            <p>UB Tutoring is a place where CS students could sign up for a private tutor and
+                                recieve help with CS topics. This was a senior year team project. You can find my
+                                contributions <a target="_blank"
+                                    href="https://github.com/cse442-spring-2020-offering/cse442-semester-project-jalapenocrisp/commits?author=kesamercy">here.</a>
+                            </p>
+                            <div class="w3-card-4" style="width:100%">
                                 <img src="UB-Tutoring.png" alt="Person" style="width:100%">
-                            <div class="w3-container">
-                                <p>
-                                    <a href="https://github.com/cse442-spring-2020-offering/cse442-semester-project-jalapenocrisp
-                                " target="_blank">Code on Github</a> </p>
+                                <div class="w3-container">
+                                    <p>
+                                        <a target='_blank' href="https://github.com/cse442-spring-2020-offering/cse442-semester-project-jalapenocrisp
+                                " target="_blank">Code on Github</a>
+                                    </p>
+                                </div>
+
+
                             </div>
+                        </div>
+
+                        <div class="w3-padding-64">
 
 
+                            <h6 class="">Wandika</h6>
+                            <p>I used Wandika, a platform where bloggers could share content and connect with other
+                                bloggers, as a web development project that I would use to learn and improve my
+                                front end and back end development skills. While I was developing
+                                it, other students (masters and undergraduate) picked interest in working on the
+                                project with me. With the permission from the respective Professors, Wandika was
+                                then adopted as a project by which students who worked on it
+                                and achieved significant success in the development of its various components, could
+                                use it as credit to fulfill some of their program requirements. For summer and Fall
+                                semester 2019, I was the team lead on the development
+                                of Wandika. Myself and 2 other students (masters and undergraduate) built the
+                                different components of Wandika as an independent study course to fulfill MS
+                                Computer Sciences requirements and BS in Computer Sciences requirements
+                                by the respective students. We all got an A in the course as assessed by the
+                                instructor based on our individual achievements in the development of the project.
+                            </p>
+                            <div class="w3-card-4" style="width:100%">
+
+                                <div class="w3-container">
+                                    <p>
+                                        <a target='_blank' href="https://github.com/kesamercy/wandikaApp"
+                                            target="_blank">Code on
+                                            Github</a>
+                                    </p>
+                                </div>
+
+
+                            </div>
                         </div>
                     </div>
 
-                    <div class="w3-padding-64">
-
-
-                        <h4 class="">Wandika</h4>
-                        <p>I used Wandika, a platform where bloggers could share content and connect with other bloggers, as a web development project that I would use to learn and improve my front end and back end development skills. While I was developing
-                            it, other students (masters and undergraduate) picked interest in working on the project with me. With the permission from the respective Professors, Wandika was then adopted as a project by which students who worked on it
-                            and achieved significant success in the development of its various components, could use it as credit to fulfill some of their program requirements. For summer and Fall semester 2019, I was the team lead on the development
-                            of Wandika. Myself and 2 other students (masters and undergraduate) built the different components of Wandika as an independent study course to fulfill MS Computer Sciences requirements and BS in Computer Sciences requirements
-                            by the respective students. We all got an A in the course as assessed by the instructor based on our individual achievements in the development of the project.
-                        </p>
-                        <div class="w3-card-4" style="width:100%">
-
-                            <div class="w3-container">
-                                <p>
-                                    <a href="https://github.com/kesamercy/wandikaApp" target="_blank">Code on Github</a> </p>
-                            </div>
-
-
-                        </div>
-                    </div>
                 </div>
-
             </div>
-        </div>
 
-
-        <div class="w3-padding-32" id="past-work">
-            <h2>Past Work</h2>
-            <p><strong>SOFTWARE ENGINEERING INTERN Jebbit Inc, Boston MA, June 2019 – Aug 2019 </strong> <br> Developed the front end of a web application that was used by in-house engineers as one of their tools during development. Fixed bugs and added new features for existing applications. Developed the application using Ember js framework and Ruby on Rails. Used Jira and Git version control system extensively during the project.
-
-            </p>
-            <p><strong> UNDERGRADUTE RESEARCH FELLOW, University at Buffalo, School of Engineering and Applied Science, Buffalo NY, Sept 2018 – Aug 2019 </strong> <br> Worked with Dr. Oliver Kennedy as a research assistant on his research project <a target="_blank"
-                    href="https://odin.cse.buffalo.edu/research/mimir/">mimir</a> which is a data analysis tool. I built a tool called the <a href="https://github.com/kesamercy/DectectorForTypes">type-detector</a> in Java which is a part of the optimization
-                implementation for mimir. It is one of the features that mimir uses to detect data types in columns of CSV files.
-
-            </p>
-            <p>
-                <strong>FULL STACK DEVELOPER, INTERN MANAGER, Fleet by MasT Analytics, Baltimore MD, May 2018 - Aug 2018 </strong> <br> Managed software developer interns during web development projects in an agile work environment. Developed the front
-                end of database management systems for clients in HTML, CSS, Bootstrap, vueBootstrap, Vue.js, JavaScript and JQuery. I also developed the backend in PHP.
-
-            </p>
-            <p><strong> SOFTWARE ENGINEERING INTERN, ETS Corporation, Ashburn VA, Feb 2018 - May 2018 </strong> <br> Improved e-commerce platform features that boosted client product sales through online purchases on these platforms. Developed these features
-                in, AngularJS, NodeJs, Bootstrap, HTML and CSS. Used git version control for team collaboration.
-            </p>
-
-            <p><strong> FRONT END DEVELOPER INTERN | E-PURCHASING NETWORK, STERLING, VA | APRIL 2017 – DEC 2017
-            </strong> <br> Discovered an ETL (Extract Transform Load) tool called dexi.io that expedited the data integration process. As a result, labor costs decreased while work-flow structure and efficiency improved. Designed and developed front end
-                elements of websites for clients and also resolved minor software problems.
-
-            </p>
-
-            <p><strong> INFORMATION TECHNOLOGY INTERN | GRACE COVENANT CHURCH, CHANTILLY, VA | MAY 2016 – AUG 2016
-            </strong> <br> Updated and modified code for the church website which improved its functionality and simplified the over-all user experience.
-
-            </p>
 
 
         </div>
 
-        <div class="w3-padding-32" id="interests">
-            <h2>Interests</h2>
-            <p>I'm a self starter. When I think of an idea, that I think is really cool, that I think could change lives, I don't wait for someone to make it happen. I do it. I build stuff I belive would have a positive impact on businnesses, people's lives
-                or my resume :).</p>
-            <p>I enjoy writing. I was the author of <a target="_blank" href="https://ubwp.buffalo.edu/csevoice/category/engineers-lounge/">Engineer's Lounge,</a> a blog where I shared beneficial resources on how to excel and succeeed as a Computer Science
-                student in college.</p>
 
-            <p>I do have a life that has nothing to do with code - or Computer Science for that matter. I enjoy swimming. Nothing close to professional, just enough to say I exceirse. I play piano. It helps when breaking away from the routine of writing
-                code. I'm a writer. Mostly inspired by life experiences. </p>
-
-        </div>
-
-        <div class="w3-padding-32" id="education">
-            <h2>Education</h2>
-            <p> I completed a Bachelor of Science, Computer Science degree from Universtiy at Buffalo - The State University of New York. </p>
-
-        </div>
-
-        <div class="w3-padding-32" id="contact">
-            <h2>Contact</h2>
-            <p>To reach me, you can send an email to kesamercy@gmail.com.</p>
-            <p>You can also check out my <a target="_blank" href="https://www.linkedin.com/in/nekesamercy/">Linked in</a>.</p>
-
-        </div>
 
     </div>
 
 
     <script>
+        function openCity(evt, cityName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace("tabColor", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " tabColor";
+        }
     </script>
 
 </body>
