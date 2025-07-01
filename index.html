@@ -7,19 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         * {
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
-        
+
         ::selection {
             background: #000;
             color: #fff;
         }
-        
+
         body {
             background: #fdfdfd;
             font-family: 'Crimson Text', serif;
@@ -31,17 +33,17 @@
             max-width: 65ch;
             margin: 0 auto;
             background: #ffffff;
-            box-shadow: 
-                0 0 0 1px rgba(0,0,0,0.03),
-                0 2px 4px rgba(0,0,0,0.02),
-                0 8px 24px rgba(0,0,0,0.05);
+            box-shadow:
+                0 0 0 1px rgba(0, 0, 0, 0.03),
+                0 2px 4px rgba(0, 0, 0, 0.02),
+                0 8px 24px rgba(0, 0, 0, 0.05);
             border-radius: 0;
         }
 
         .page-header {
             font-family: 'Inter', sans-serif;
             border-bottom: 1px solid #e8e8e8;
-            background: rgba(255,255,255,0.95);
+            background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
         }
 
@@ -71,9 +73,9 @@
         }
 
         .paper-shadow {
-            box-shadow: 
-                0 1px 3px rgba(0,0,0,0.12),
-                0 1px 2px rgba(0,0,0,0.24);
+            box-shadow:
+                0 1px 3px rgba(0, 0, 0, 0.12),
+                0 1px 2px rgba(0, 0, 0, 0.24);
         }
 
         .link-underline {
@@ -125,9 +127,17 @@
         }
 
         @media print {
-            body { background: white; }
-            .document-container { box-shadow: none; }
-            .page-header { position: relative; }
+            body {
+                background: white;
+            }
+
+            .document-container {
+                box-shadow: none;
+            }
+
+            .page-header {
+                position: relative;
+            }
         }
     </style>
 </head>
@@ -138,8 +148,8 @@
         <header class="page-header sticky top-0 z-50 px-12 py-8">
             <div class="flex justify-between items-baseline">
                 <div class="sans-heading text-lg tracking-tight">MN</div>
-                <a href="https://linkedin.com/in/nekesamercy" target="_blank" 
-                   class="link-underline sans-heading text-sm">
+                <a href="https://linkedin.com/in/nekesamercy" target="_blank"
+                    class="link-underline sans-heading text-sm">
                     Contact Me
                 </a>
             </div>
@@ -152,11 +162,12 @@
                 <h1 class="serif-heading hero-type mb-12">
                     Engineer &<br>Entrepreneur
                 </h1>
-                
+
                 <div class="space-y-6">
                     <p class="body-text font-semibold">I'm Mercy Nekesa. I build technology that solves problems.</p>
-                    <p class="body-text paragraph-indent">Currently, I'm building Zorentia Product Studio, a no-code platform that empowers non-technical founders to build their own applications. Previously, I developed Raining Vegetables, a platform now serving over 7,000 farmers across Uganda.</p>
-                    <p class="body-text paragraph-indent">My work has been recognized in Uganda, Belgium, and Australia, but what matters most is the impact—helping people build solutions that improve their lives.</p>
+                    
+                    <p class="body-text paragraph-indent">My work has been recognized in Uganda, Belgium, and Australia,
+                        but what matters most is the impact—helping people build solutions that improve their lives.</p>
                 </div>
             </section>
 
@@ -167,7 +178,8 @@
                 <h2 class="sans-heading text-2xl mb-8 tracking-tight">What I'm Building Now</h2>
                 <div class="ml-8">
                     <h3 class="serif-heading text-xl mb-4 tracking-tight">Zorentia Product Studio</h3>
-                    <p class="body-text">A no-code platform that empowers non-technical founders to build their own applications. Because good ideas shouldn't be limited by technical barriers.</p>
+                    <p class="body-text">A no-code platform that empowers non-technical founders to build their own
+                        applications. Because good ideas shouldn't be limited by technical barriers.</p>
                 </div>
             </section>
 
@@ -179,22 +191,28 @@
                 <div class="space-y-12 ml-8">
                     <div class="margin-note">
                         <h3 class="serif-heading text-xl mb-4 tracking-tight">Raining Vegetables</h3>
-                        <p class="body-text">A data platform that provides farmers with agricultural guidance. Serves over 7,000 farmers across Uganda, with clients including National Agricultural Research Organisation (NARO) and Agribusiness Development Centre (ADC).</p>
+                        <p class="body-text">A data platform that provides farmers with agricultural guidance. Serves
+                            over 7,000 farmers across Uganda, with clients including National Agricultural Research
+                            Organisation (NARO) and Agribusiness Development Centre (ADC).</p>
                     </div>
-                    
+
                     <div class="margin-note">
                         <h3 class="serif-heading text-xl mb-4 tracking-tight">Sundetails Technologies</h3>
-                        <p class="body-text">Software that helps small businesses digitize their operations. Built to solve the specific challenges I saw in local business processes.</p>
+                        <p class="body-text">Software that helped small businesses digitize their operations. Built to
+                            solve the specific challenges I saw in local business processes.</p>
                     </div>
-                    
+
                     <div class="margin-note">
                         <h3 class="serif-heading text-xl mb-4 tracking-tight">Teaching at UCU</h3>
-                        <p class="body-text">Developed curriculum at Uganda Christian University's Faculty of Engineering, focusing on bridging the gap between academic computer science and real-world application.</p>
+                        <p class="body-text">Developed curriculum & taught  courses at Uganda Christian University's Faculty of
+                            Engineering, focusing on bridging the gap between academic computer science and real-world
+                            application.</p>
                     </div>
-                    
+
                     <div class="margin-note">
                         <h3 class="serif-heading text-xl mb-4 tracking-tight">Agricultural Research</h3>
-                        <p class="body-text">Collaborated with NARO on field research studying agro-ecological and water management practices through watershed visits and community engagement.</p>
+                        <p class="body-text">Collaborated with NARO on field research studying agro-ecological and water
+                            management practices through watershed visits and community engagement.</p>
                     </div>
                 </div>
             </section>
@@ -207,7 +225,8 @@
                 <div class="space-y-6 ml-8">
                     <p class="body-text">UNSW New Wave Program, Sydney Australia (2025)</p>
                     <p class="body-text">Best Agri-Business, Generation Food Belgium (2022)</p>
-                    <p class="body-text">Featured in The Daily Monitor and UBC TV, Uganda (2022) for agricultural technology work</p>
+                    <p class="body-text">Featured in The Daily Monitor and UBC TV, Uganda (2022) for agricultural
+                        technology work</p>
                 </div>
             </section>
 
@@ -216,25 +235,43 @@
             <!-- Past Projects -->
             <section class="mb-16">
                 <h2 class="sans-heading text-2xl mb-6 tracking-tight">Past Projects</h2>
-                <p class="body-text text-gray-600 mb-8 ml-8">A few technical projects that shaped how I think about problem-solving:</p>
-                
+                <p class="body-text text-gray-600 mb-8 ml-8">A few technical projects that shaped how I think about
+                    problem-solving:</p>
+
                 <div class="ml-8">
                     <h3 class="serif-heading text-xl mb-4 tracking-tight">Medical Translation Project (2020)</h3>
-                    <p class="body-text">Developed an LSTM-based machine learning algorithm to translate medical forms between African languages. Built this to address the gap where Google Translate only supported 13 of 2,000+ African languages at the time, creating both the translation model and a medical translator application for doctor-patient communication.</p>
+                    <p class="body-text">Developed an LSTM-based machine learning algorithm to translate medical forms
+                        between African languages. Built this to address the gap where Google Translate only supported
+                        13 of 2,000+ African languages at the time, creating both the translation model and a medical
+                        translator application for doctor-patient communication.</p>
                 </div>
             </section>
 
             <div class="section-divider"></div>
 
+
+
             <!-- Let's Connect -->
             <section class="mb-16">
                 <h2 class="serif-heading text-4xl font-light mb-8 tracking-tight">Let's Connect</h2>
-                <p class="body-text mb-8 max-w-xl">Working on something interesting? I'd like to hear about it.</p>
-                <a href="https://linkedin.com/in/nekesamercy" target="_blank" 
-                   class="link-underline serif-heading text-lg">
-                    LinkedIn
-                </a>
+                <p class="body-text mb-8 max-w-xl">Non-tech founder working on something interesting? I'd like to hear about it.</p>
+                <div class="space-y-4">
+                    <div>
+                        <a href="https://linkedin.com/in/nekesamercy" target="_blank"
+                            class="link-underline serif-heading text-lg">
+                            LinkedIn
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://blog.mercynekesa.com" target="_blank"
+                            class="link-underline serif-heading text-lg">
+                            Blog
+                        </a>
+                    </div>
+                </div>
             </section>
+
+
         </main>
 
         <!-- Document Footer -->
@@ -243,4 +280,5 @@
         </footer>
     </div>
 </body>
+
 </html>
