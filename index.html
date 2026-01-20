@@ -139,6 +139,152 @@
                 position: relative;
             }
         }
+
+        .institutional-partners {
+            padding: 3rem 0;
+            border-top: 1px solid #e8e8e8;
+            border-bottom: 1px solid #e8e8e8;
+            margin: 4rem 0;
+        }
+
+        .logo-flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            transition: opacity 0.3s ease;
+        }
+
+        .logo-flex:hover {
+            opacity: 1;
+        }
+
+        .logo-flex img {
+            height: 48px;
+            /* Uniform height for a clean look */
+            width: auto;
+            object-fit: contain;
+        }
+
+        .logo-flex img.logo-small {
+            height: 24px;
+        }
+
+        .press-archive-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.25rem;
+        }
+
+        .press-archive-card {
+            display: flex;
+            flex-direction: column;
+            background: #fff;
+            border: 1px solid #e8e8e8;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow:
+                0 6px 16px rgba(0, 0, 0, 0.06),
+                0 2px 4px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .press-archive-card:hover {
+            transform: translateY(-4px);
+            box-shadow:
+                0 12px 24px rgba(0, 0, 0, 0.12),
+                0 4px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .press-archive-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            filter: saturate(0.9);
+        }
+
+        .press-archive-body {
+            padding: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+        }
+
+        .press-archive-meta {
+            font-size: 0.65rem;
+            letter-spacing: 0.4em;
+            text-transform: uppercase;
+            color: #777;
+        }
+
+        .press-archive-title {
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            line-height: 1.5;
+            font-weight: 600;
+            color: #111;
+        }
+
+        .field-notes-gallery {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+            margin-top: 2.5rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            background: #fff;
+            border: 1px solid #eee;
+            padding: 1.25rem;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: auto;
+            max-height: 420px;
+            object-fit: contain;
+            transition: filter 0.5s ease, transform 0.5s ease;
+            border: 1px solid #f0f0f0;
+            border-radius: 6px;
+            background: #fafafa;
+        }
+
+        .gallery-image:hover {
+            filter: grayscale(0%);
+        }
+
+        .caption-block {
+            margin-top: 1rem;
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+        }
+
+        .figure-number {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #999;
+        }
+
+        .footnote-text {
+            font-size: 0.85rem;
+            line-height: 1.5;
+            color: #4a4a4a;
+        }
+
+        @media (min-width: 768px) {
+            .gallery-item {
+                padding: 1.5rem;
+            }
+        }
     </style>
 </head>
 
@@ -164,12 +310,22 @@
                 </h1>
 
                 <div class="space-y-6">
-                    <p class="body-text font-semibold text-xl">I am Mercy Nekesa. I build technology that solves
-                        problems.</p>
+                    <p class="body-text font-semibold text-xl">I’m Mercy Nekesa. Computer scientist, entrepreneur,
+                        and founder of Zorentia.</p>
 
-                    <p class="body-text">I have spent the last decade building systems that bridge the gap between
-                        technical logic and real-world application—from scaling ag-tech to 7,000 farmers to
-                        developing NLP solutions for under-represented languages.</p>
+                    <p class="body-text">
+                        The most impactful technology is built by those who deeply understand the problem. Yet, domain
+                        experts remain sidelined because technical execution is still a black box. Zorentia makes
+                        building tech legible by codifying the "how" of technical execution.
+
+                        The methodology - initially validated via the Westpac New Wave X first prize and a $15k
+                        infrastructure pilot - is now live.
+                    </p>
+
+                    <p class="body-text">Before Zorentia, I bootstrapped Raining Vegetables, an ag-tech company in
+                        Uganda to 7,000 farmers,
+                        partnering with private, public, and international organisations to improve agricultural
+                        outcomes. </p>
 
                 </div>
             </section>
@@ -180,56 +336,108 @@
                 <div class="document-meta mb-4">What I'm Building Now</div>
                 <h2 class="sans-heading text-2xl mb-8 tracking-tight">Zorentia</h2>
                 <div class="ml-8">
-                    <p class="body-text mb-6">Decision infrastructure for building software. We transform raw ideas into
-                        complete, executable sequences. Our Ship Plans provide the engineering logic that covers what
-                        most builds miss: the strategic trade-offs behind technical choices, the exact order of
-                        execution, the specific checks that prove your work is complete, and the troubleshooting
-                        resources when builds stall. The result is you ship a working product while learning how to
-                        build the next one faster.</p>
+                    <p class="body-text mb-6">Building technology is currently a game of high-stakes guessing. Zorentia
+                        replaces that with Ship Plans - precision engineering logic for the execution phase.
+
+                        We transform raw technical vision into a Deterministic Sequence: a complete, step-by-step
+                        roadmap that dictates exactly what to build, in what order, and how to verify completion at
+                        every node. By codifying the shipping process, we ensure you don’t just launch a product - you
+                        master the architecture of launching itself.
+                        We are starting with software.
+
+                        <br>You bring the intent; we provide the blueprint.
+                    </p>
                     <!-- add the no refrerence protector to the link -->
                     <a target="_blank" href="https://zorentia.com/methodology" rel="noreferrer"
-                        class="link-underline serif-heading text-xl">View the
-                        1G Methodology →</a>
+                        class="link-underline serif-heading text-xl">One-Gram of Tech (1G) →</a>
                 </div>
             </section>
+
+
 
             <div class="section-divider"></div>
 
             <section class="mb-16">
-                <div class="document-meta mb-4">Institutional Impact</div>
-                <h2 class="sans-heading text-2xl mb-8 tracking-tight">Scale & Research</h2>
-                <div class="space-y-12 ml-8">
-                    <div class="margin-note">
-                        <h3 class="serif-heading text-2xl mb-2 tracking-tight">Raining Vegetables (East Africa)</h3>
-                        <p class="body-text font-semibold text-sm mb-4">FOUNDER & CEO | 7,000+ USERS</p>
-                        <p class="body-text mb-4">A data platform that provides farmers with agricultural guidance.
-                            Serves over 7,000 farmers across Uganda, with clients including National Agricultural
-                            Research Organisation (NARO) and Agribusiness Development Centre (ADC).</p>
+                <div class="document-meta mb-4">Work</div>
+                <h2 class="sans-heading text-2xl mb-12 tracking-tight">Selected Experience</h2>
 
-                        <div class="flex gap-4 mt-2">
-                            <a href="https://www.monitor.co.ug/uganda/news/national/computer-scientist-creates-software-to-support-farmers-3848822"
-                                target="_blank" class="document-meta link-underline">Daily Monitor Feature</a>
-                            <a href="https://www.youtube.com/watch?v=K9sIalucYWo" target="_blank"
-                                class="document-meta link-underline">UBC TV Interview</a>
+                <div class="space-y-20 ml-8">
+
+                    <div class="margin-note">
+                        <h3 class="serif-heading text-2xl mb-2 tracking-tight">Zorentia</h3>
+                        <p class="document-meta mb-3 text-xs uppercase tracking-widest">Founder | Sydney, Australia —
+                            2025 - Present</p>
+                        <p class="body-text">
+                            Develoed the One-Gram of tech methodology and Ship Plan infrastructure. Zorentia translates
+                            technical
+                            intent into executable sequences, providing the step-by-step logic required to build and
+                            launch software products.
+                        </p>
+                    </div>
+
+                    <div class="margin-note">
+                        <h3 class="serif-heading text-2xl mb-2 tracking-tight">Raining Vegetables (Group)</h3>
+                        <p class="document-meta mb-3 text-xs uppercase tracking-widest">Founder & CEO | Kampala, Uganda
+                            — 2020 – 2024</p>
+                        <p class="body-text mb-6">
+                            Engineered and scaled a national ag-tech platform serving 7,000 farmers. Managed the full
+                            technical stack, including AWS infrastructure, payment integration, and data
+                            architecture, while leading strategic partnerships with <strong>Rikolto (Belgium)</strong>
+                            and the <strong>National Agricultural Research Organisation (NARO)</strong>.
+                        </p>
+                        <p class="body-text mb-6">
+                            Secured and managed institutional collaboration with the <strong>Agribusiness Development
+                                Centre (ADC)</strong>, an entity established by the <strong>Rabo Foundation
+                                (Netherlands)</strong> and <strong>dfcu Bank</strong>. Operated at the intersection of
+                            international development finance and large-scale technical deployment.
+                        </p>
+
+                        <div class="pl-6 border-l border-gray-100 mt-4">
+                            <h4 class="sans-heading text-xs font-bold uppercase tracking-widest mb-2">Subsidiary:
+                                Sundetails Technologies</h4>
+                            <p class="body-text text-sm">
+                                Directed the digital transition of small-to-medium enterprises. Developed custom
+                                software solutions to replace manual legacy operations with digital workflows and
+                                data-driven management systems.
+                            </p>
                         </div>
                     </div>
 
                     <div class="margin-note">
-                        <h3 class="serif-heading text-2xl mb-2 tracking-tight">Medical NLP Translation</h3>
-                        <p class="body-text font-semibold text-sm mb-4">LSTM-BASED MACHINE LEARNING</p>
-                        <p class="body-text">Developed an LSTM-based machine learning algorithm to translate medical
-                            forms between African languages. Built this to address the gap where Google Translate only
-                            supported 13 of 2,000+ African languages at the time, creating both the translation model
-                            and a medical translator application for doctor-patient communication.</p>
+                        <h3 class="serif-heading text-2xl mb-2 tracking-tight">Uganda Christian University (UCU)</h3>
+                        <p class="document-meta mb-3 text-xs uppercase tracking-widest">Lecturer, Faculty of Engineering
+                            & Technology | 2023 – 2024</p>
+                        <p class="body-text">
+                            Led curriculum development and research mentorship within the Computer Science department.
+                            Focused on the transition from academic software research to industry-standard project
+                            execution and product management.
+                        </p>
                     </div>
 
-                    <div class="margin-note">
-                        <h3 class="serif-heading text-2xl mb-2 tracking-tight">Faculty of Engineering, UCU</h3>
-                        <p class="body-text font-semibold text-sm mb-4"> LECTURER</p>
-                        <p class="body-text">Developed curriculum and taught courses at Uganda Christian University's
-                            Faculty of Engineering, focusing on bridging the gap between academic computer science and
-                            real-world application.</p>
-                    </div>
+                </div>
+            </section>
+
+
+
+            <div class="section-divider"></div>
+
+            <section class="mb-16">
+                <div class="document-meta text-center mb-10">Global Footprint: Partnering with Leading Private & Public
+                    Institutions</div>
+                <div class="logo-flex px-8">
+                    <img src="westpac.png" alt="Westpac">
+
+                    <img src="naro.png" alt="NARO">
+                    <img src="dfcu.png" alt="dfcu Bank">
+                    <img src="adc.png" alt="ADC">
+                    <img src="UICT.png" alt="UICT">
+
+                    <img src="youca.png" alt="YOUCA">
+                    <img src="rikolto.png" alt="Rikolto">
+                    <!-- how do i scale this logo down -->
+
+                    <img src="unsw-founders.webp" alt="UNSW Sydney" class="logo-small">
+
                 </div>
             </section>
 
@@ -245,21 +453,21 @@
                     <div class="grid grid-cols-1 md:grid-cols-1 gap-8">
                         <div class="margin-note">
                             <h3 class="serif-heading text-xl mb-1">UNSW New Wave Winner</h3>
-                            <p class="document-meta mb-2">Sydney, Australia — 2025</p>
+                            <p class="document-meta mb-2">Sydney , Australia — 2025</p>
                             <p class="body-text text-sm">Recognized for early-stage venture architecture and technical
                                 leadership within the UNSW ecosystem.</p>
                         </div>
 
                         <div class="margin-note">
                             <h3 class="serif-heading text-xl mb-1">Best Agri-Business</h3>
-                            <p class="document-meta mb-2">Generation Food, Belgium — 2022</p>
+                            <p class="document-meta mb-2">Generation Food & Rikolto, Belgium — 2022</p>
                             <p class="body-text text-sm">International recognition for sustainable innovation and
                                 data-driven agricultural impact.</p>
                         </div>
 
                         <div class="margin-note">
                             <h3 class="serif-heading text-xl mb-1">Best Female Entrepreneur</h3>
-                            <p class="document-meta mb-2">Rising Woman, Uganda — 2022</p>
+                            <p class="document-meta mb-2">Rising Woman, DFUC BANK, Uganda — 2022</p>
                             <p class="body-text text-sm">Awarded for innovation and resilience in building software for
                                 the agricultural sector.</p>
                         </div>
@@ -268,23 +476,196 @@
 
                     <div class="pt-6 border-t border-gray-100">
                         <div class="document-meta mb-4">Press Archive</div>
-                        <ul class="space-y-4">
-                            <li class="flex items-baseline gap-4">
-                                <span class="document-meta text-xs w-24 shrink-0">Daily Monitor</span>
-                                <a href="https://www.monitor.co.ug/uganda/news/national/computer-scientist-creates-software-to-support-farmers-3848822"
-                                    target="_blank" class="link-underline serif-heading text-lg">
-                                    Computer scientist creates software to support farmers
-                                </a>
-                            </li>
-                            <li class="flex items-baseline gap-4">
-                                <span class="document-meta text-xs w-24 shrink-0">UBC TV</span>
-                                <a href="https://www.youtube.com/watch?v=K9sIalucYWo" target="_blank"
-                                    class="link-underline serif-heading text-lg">
-                                    Mercy Nekesa: Technical Interview on Agricultural Systems
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="press-archive-grid">
+                            <a href="https://www.monitor.co.ug/uganda/news/national/computer-scientist-creates-software-to-support-farmers-3848822"
+                                target="_blank" class="press-archive-card">
+                                <img src="newspaper.jpg" alt="Daily Monitor article" class="press-archive-image">
+                                <div class="press-archive-body">
+                                    <span class="press-archive-meta">Daily Monitor</span>
+                                    <span class="press-archive-title">Computer scientist creates software to support
+                                        farmers</span>
+                                </div>
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=K9sIalucYWo" target="_blank"
+                                class="press-archive-card">
+                                <img src="https://img.youtube.com/vi/K9sIalucYWo/hqdefault.jpg"
+                                    onerror="this.onerror=null;this.src='newspaper.jpg';"
+                                    alt="Mercy Nekesa: Technical Interview on Agricultural Systems"
+                                    class="press-archive-image">
+                                <div class="press-archive-body">
+                                    <span class="press-archive-meta">UBC TV</span>
+                                    <span class="press-archive-title">Mercy Nekesa: Technical Interview on Agricultural
+                                        Systems</span>
+                                </div>
+                            </a>
+                        </div>
                     </div>
+                </div>
+            </section>
+
+
+
+
+            <div class="section-divider"></div>
+
+            <section class="mb-16">
+                <div class="document-meta mb-4">THE TECHNICAL ARCHIVE (USA)</div>
+                <h2 class="sans-heading text-2xl mb-8 tracking-tight"> Internships (Archive) </h2>
+                <div class="space-y-6 ml-8">
+                    <div>
+                        <p class="body-text"><strong>Jebbit (Boston)</strong> — SWE Intern: Enterprise marketing
+                            Infrastructure
+                            <span class="document-meta text-[10px] ml-2">2019</span>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="body-text"><strong>University at Buffalo (New York)</strong> — Research Fellow:
+                            Engineering & Applied Sciences
+                            <span class="document-meta text-[10px] ml-2">2018 - 2019 </span>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="body-text"><strong>Fleet by MasT (Baltimore)</strong> — Full Stack Intern: Logistics &
+                            Fleet
+                            Management
+                            <span class="document-meta text-[10px] ml-2">2018</span>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="body-text"><strong>ETS (Northern Virginia)</strong> — SWE Intern: Secure Financial
+                            Systems
+                            <span class="document-meta text-[10px] ml-2">2018</span>
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="mb-16">
+                <div class="document-meta mb-4">THE TECHNICAL ARCHIVE (RESEARCH)</div>
+                <h2 class="sans-heading text-2xl mb-8 tracking-tight"> Research & Projects (Archive) </h2>
+                <div class="space-y-12 ml-8">
+                    <div class="margin-note">
+                        <h3 class="serif-heading text-xl mb-1">Medical NLP Translator</h3>
+                        <p class="document-meta mb-2">2019 — 2020</p>
+                        <p class="body-text text-sm">Designed an NLP solution for 2,000+ unsupported African languages.
+                            Built an LSTM-based machine translation algorithm for clinical communication.</p>
+                    </div>
+
+
+
+                    <div class="margin-note">
+                        <h3 class="serif-heading text-xl mb-1">Journey to Mental Wealth</h3>
+                        <p class="document-meta mb-2">2020</p>
+                        <p class="body-text text-sm">Full-stack platform for resource mapping and community support
+                            mechanisms, focusing on social infrastructure for at-risk demographics.</p>
+                    </div>
+
+                    <div class="margin-note">
+                        <h3 class="serif-heading text-xl mb-1">Concert Seat Assignment Engine</h3>
+                        <p class="document-meta mb-2">2019</p>
+                        <p class="body-text text-sm">Developed an optimization algorithm for automated venue seating
+                            based on proximity-to-center heuristics and group constraints.</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <div class="section-divider"></div>
+
+            <section class="mb-16">
+                <div class="document-meta mb-4">Visual Documentation</div>
+                <h2 class="sans-heading text-2xl mb-8 tracking-tight">Panels & Fieldwork</h2>
+
+                <div class="field-notes-gallery">
+
+                    <div class="gallery-item">
+                        <img src="mercy-panel-2.jpg"
+                            alt="Panel speaker at the Digital Financial Inclusion Summit, Kampala"
+                            class="gallery-image">
+                        <div class="caption-block">
+                            <span class="figure-number">FIG. 01</span>
+                            <p class="footnote-text">
+                                <strong>Kampala, Uganda:</strong> Panel speaker at the Digital Financial Inclusion
+                                Summit, charting a path for inclusive mobile finance with regional changemakers.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="mercy-winnwer-unsw.jpeg" alt="UNSW New Wave winner 2025, Sydney"
+                            class="gallery-image">
+                        <div class="caption-block">
+                            <span class="figure-number">FIG. 02</span>
+                            <p class="footnote-text">
+                                <strong>Sydney, Australia:</strong> Celebrated as the UNSW New Wave 2025 winner for
+                                Zorentia.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="AI-panel.JPG" alt="AI Startup Showcase panel, AI in Business and Society, Sydney"
+                            class="gallery-image">
+                        <div class="caption-block">
+                            <span class="figure-number">FIG. 03</span>
+                            <p class="footnote-text">
+                                <strong>Sydney, Australia:</strong> Panelist at the AI Startup Showcase during the AI in
+                                Business and Society launch, speaking as a technical female founder.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <!-- work-fintech -->
+                        <img src="mercy-panel.jpg" alt="Digital summit panel with bank managers, Kampala"
+                            class="gallery-image">
+                        <div class="caption-block">
+                            <span class="figure-number">FIG. 04</span>
+                            <p class="footnote-text">
+                                <strong>Kampala, Uganda:</strong> On the left flank of the digital summit panel with
+                                ABSA and other bank leaders, outlining how finance can meet modern infrastructure.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="work-fintech.JPG" alt="Women in Fintech Summit, Kampala" class="gallery-image">
+                        <div class="caption-block">
+                            <span class="figure-number">FIG. 05</span>
+                            <p class="footnote-text">
+                                <strong>Kampala, Uganda:</strong> Second from the left with a circle of women founders
+                                at the Women in Fintech Summit.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="SIT-panel.jpg" alt="Singapore Institute of Technology exchange visit, Sydney"
+                            class="gallery-image">
+                        <div class="caption-block">
+                            <span class="figure-number">FIG. 06</span>
+                            <p class="footnote-text">
+                                <strong>Sydney, Australia:</strong> Panel speaker during the Singapore Institute of
+                                Technology exchange visit hosted by the UNSW Business School.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="mercy-winner-group.jpeg" alt="Mercy center with the UNSW New Wave women cohort 2025"
+                            class="gallery-image">
+                        <div class="caption-block">
+                            <span class="figure-number">FIG. 07</span>
+                            <p class="footnote-text">
+                                <strong>Sydney, Australia:</strong> Center stage with the UNSW New Wave 2025 women
+                                founders cohort, celebrating collective momentum.
+                            </p>
+                        </div>
+                    </div>
+
+                    
+
                 </div>
             </section>
 
@@ -301,17 +682,36 @@
                 </div>
             </section>
 
+            <section class="mb-16">
+                <div class="document-meta mb-4">Leadership & Advocacy</div>
+                <h2 class="sans-heading text-2xl mb-8 tracking-tight">Global Impact</h2>
+                <div class="space-y-12 ml-8">
+
+                    <div class="margin-note">
+                        <h3 class="serif-heading text-xl mb-1">YOUCA Ambassador</h3>
+                        <p class="document-meta mb-2">YOUCA vzw | Leuven, Belgium — 2022-2024</p>
+                    </div>
+
+                    <div class="margin-note">
+                        <h3 class="serif-heading text-xl mb-1">Thread Mentor</h3>
+                        <p class="document-meta mb-2">Thread | Baltimore, MD, USA — 2017-2021</p>
+                    </div>
+
+                </div>
+            </section>
+
+
             <div class="section-divider"></div>
 
             <section class="mb-16">
                 <h2 class="serif-heading text-4xl font-light mb-8 tracking-tight">Let's Build.</h2>
-                <p class="body-text mb-8 max-w-xl">We're launching Zorentia for students. If you're student building
+                <p class="body-text mb-8 max-w-xl">Zorentia for students is live. If you're student building
                     something,
                     I'd like to hear about it.</p>
                 <div class="flex gap-8">
                     <a href="https://linkedin.com/in/nekesamercy" target="_blank"
                         class="link-underline serif-heading text-lg">LinkedIn</a>
-                    <a href="https://blog.mercynekesa.com" target="_blank"
+                    <a href="https://zorentia.com/blog" target="_blank"
                         class="link-underline serif-heading text-lg">Blog</a>
                 </div>
             </section>
