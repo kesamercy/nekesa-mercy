@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Raining Vegetables | Mercy Nekesa</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        ::selection {
+            background: #000;
+            color: #fff;
+        }
+
+        body {
+            background: #fdfdfd;
+            font-family: 'Crimson Text', serif;
+            line-height: 1.65;
+            color: #1a1a1a;
+        }
+
+        .document-container {
+            max-width: 65ch;
+            margin: 0 auto;
+            background: #ffffff;
+            box-shadow:
+                0 0 0 1px rgba(0, 0, 0, 0.03),
+                0 2px 4px rgba(0, 0, 0, 0.02),
+                0 8px 24px rgba(0, 0, 0, 0.05);
+            border-radius: 0;
+        }
+
+        .page-header {
+            font-family: 'Inter', sans-serif;
+            border-bottom: 1px solid #e8e8e8;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+
+        .serif-heading {
+            font-family: 'Crimson Text', serif;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+
+        .sans-heading {
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+        }
+
+        .body-text {
+            font-family: 'Crimson Text', serif;
+            font-size: 18px;
+            line-height: 1.7;
+            color: #2a2a2a;
+        }
+
+        .section-divider {
+            height: 1px;
+            background: #e8e8e8;
+            margin: 48px 0;
+        }
+
+        .link-underline {
+            background-image: linear-gradient(transparent, transparent 5px, #000 5px, #000);
+            background-position: bottom;
+            background-size: 100% 6px;
+            background-repeat: repeat-x;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .link-underline:hover {
+            background-image: linear-gradient(transparent, transparent 4px, #666 4px, #666);
+        }
+
+        .document-meta {
+            font-family: 'Inter', sans-serif;
+            font-size: 11px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: #666;
+        }
+
+        .hero-type {
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            line-height: 0.9;
+            font-weight: 300;
+            letter-spacing: -0.04em;
+            margin-bottom: 2rem;
+        }
+
+        .section-heading {
+            font-family: 'Crimson Text', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .article-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        .pull-quote {
+            font-family: 'Crimson Text', serif;
+            font-size: 1.75rem;
+            line-height: 1.4;
+            font-weight: 400;
+            font-style: italic;
+            letter-spacing: -0.01em;
+            margin: 3rem 0;
+            padding-left: 2rem;
+            border-left: 2px solid #1a1a1a;
+            color: #1a1a1a;
+        }
+
+        .stat-highlight {
+            font-family: 'Inter', sans-serif;
+            background: #fafafa;
+            border: 1px solid #e8e8e8;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 2px;
+        }
+
+        .stat-number {
+            font-family: 'Inter', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 300;
+            letter-spacing: -0.02em;
+            color: #1a1a1a;
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+
+        .margin-note {
+            position: relative;
+        }
+
+        .margin-note::before {
+            content: "";
+            position: absolute;
+            left: -24px;
+            top: 6px;
+            width: 2px;
+            height: 2px;
+            background: #000;
+            border-radius: 50%;
+        }
+
+        .timeline-marker {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #999;
+            margin-bottom: 0.5rem;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+
+            .document-container {
+                box-shadow: none;
+            }
+
+            .page-header {
+                position: relative;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="document-container min-h-screen">
+        <header class="page-header sticky top-0 z-50 px-12 py-8">
+            <div class="flex justify-between items-baseline">
+                <a href="index.html" class="link-underline sans-heading text-sm">← Back to resume</a>
+                <a href="https://linkedin.com/in/nekesamercy" target="_blank" class="link-underline sans-heading text-sm"
+                    rel="noreferrer">Contact Me</a>
+            </div>
+        </header>
+
+        <main class="px-12 py-16">
+            <section class="mb-16">
+                <div class="document-meta mb-4">A Deep Dive into:</div>
+                <h1 class="serif-heading hero-type">Raining<br>Vegetables</h1>
+            </section>
+
+            <article class="article-content">
+                <h2 class="section-heading">The Original Problem</h2>
+                <p class="body-text">
+                    The problem I set out to solve was farmers not being able to find a reliably consistent market for their produce. This led to massive waste from unsold food. Simultaneously, many markets went without produce. Demand was high; supply was low.
+                </p>
+                <p class="body-text">
+                    The Solution? I thought: what if we created a system with full visibility and traceability of what's in the garden? Then markets could align according to available supply. If farmers have a surplus and markets have scarcity, we could link them.
+                </p>
+
+                <h2 class="section-heading">The Hidden Reality of "The Market"</h2>
+                <p class="body-text">
+                    What I discovered is that "Markets" don't just buy any produce. Each market has its own definition of quality and quantity. Farmers can have produce, but they need to find the specific type of market that will accept that exact produce at a profitable price.
+                </p>
+                <p class="body-text">
+                    Markets often lack produce because they can't find the specific quantity and quality they need to consume. They won't take "any" produce, even if it is available.
+                </p>
+                <p class="body-text">
+                    So, how do we link them? I decided to get farmers to keep records. If they recorded when they planted, markets would have visibility of who planted what, when, and where. If they recorded their spending, they could negotiate profitable prices at the selling season. Worst case, those records would help them get bank loans if they needed capital for the next season.
+                </p>
+                <p class="body-text">
+                    I built a record-keeping platform. It generated P&L reports and production records. It tracked planting, growing, and harvesting. From our admin panel, I could see exactly what stage every crop was at. I went to the market and gave it to users because, finally, I could link them to buyers and help them negotiate at a profit.
+                </p>
+
+                <div class="pull-quote">
+                    Farmers loved the app every time I did a demo. They just never used it.
+                </div>
+
+                <h2 class="section-heading">The Incentive Gap</h2>
+                <p class="body-text">
+                    The app was brilliant on paper, but the usage was zero. I had solved for record-keeping, but I discovered that for a farmer, a record is not a means to an end. The only "end" is the market, i.e money in the bank when I sell my produce. Because our records were a reality far removed from the immediate buying or selling decision, they were ignored.
+                </p>
+                <p class="body-text">
+                    If I have to keep records in January and won't see the value of those records until September when I harvest, I might skip those records. Worse, if those records are telling me that at the current market price I will be making a loss, I will skip very fast.
+                </p>
+                <p class="body-text">
+                    This created a massive incentive gap. Creating full transparency in the supply chain made sense for the buyers, but in a free market, sometimes the farmer was forced to accept the lowest possible price at their point of need.
+                </p>
+
+                <div class="pull-quote">
+                    For a farmer, a low price isn't just a bad deal; it's an insult to their effort.
+                </div>
+
+                <p class="body-text">
+                    This is where the psychology of the market hit us. For a farmer, a low price isn't just a bad deal; it's an insult to their effort. Many would rather not sell at all - letting the crop rot - than sell at a price that undermines their hard work. It was an emotional decision, and our software was only making it harder by highlighting the gap.
+                </p>
+                <p class="body-text">
+                    Realistically? If there is no one-to-one reward for entering a record - an immediate return like money - it's hard to maintain returning users. People don't keep records because it's a "good practice"; they keep them because they want a specific result.
+                </p>
+                <p class="body-text">
+                    Our app offered financial reports that showed them exactly how much they lost. That was an outcome farmers didn't want to pay for. In fact, many felt, "I'd rather not know." The solution was a great "paper" solution, but in a free market, "knowing your losses" wasn't enough of an incentive to change behavior.
+                </p>
+
+                <div class="section-divider"></div>
+
+                <h2 class="section-heading">The Pivot: Atomic Problem Solving</h2>
+                <p class="timeline-marker">1.5 Years Later</p>
+                <p class="body-text">
+                    I had spent 1.5 years building and selling the record-keeping platform and what I wholeheartedly believed was the future of AgTech. After a presentation where I demoed the platform, a farmer came up to me.
+                </p>
+                <p class="body-text">
+                    He said: "This is amazing, I love what you're doing. That said, can you please add weather for us too? This is how I want the weather, and we can pay for it."
+                </p>
+                <p class="body-text">
+                    Remote weather forecasting is a nightmare, and they needed it to ensure they didn't miss a planting season so they could actually have something to sell at the end of the season. I went home and built the weather forecasting system for remote regions. We got 20 paying customers the weekend of release. We got 3,000 by the next month.
+                </p>
+
+                <div class="stat-highlight">
+                    <div class="grid grid-cols-3 gap-6">
+                        <div>
+                            <div class="stat-number">20</div>
+                            <div class="stat-label">Weekend 1</div>
+                        </div>
+                        <div>
+                            <div class="stat-number">3,000</div>
+                            <div class="stat-label">Month 1</div>
+                        </div>
+                        <div>
+                            <div class="stat-number">7,000</div>
+                            <div class="stat-label">Final Scale</div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="body-text">
+                    What else can I build, I asked? They said: "Market prices. Give them to us like this, and that, because we are always negotiating with aggregators and traders." I implemented the market prices feature and we reached 7,000 farmers nationwide in the following months.
+                </p>
+                <p class="body-text">
+                    The difference? Atomic problem solving got us market coverage faster than a feature-rich solution. Building exactly what they asked for got farmers paying us real money. Sometimes a software bug caused alerts to go out late and I would get calls: "I didn't see my alerts. Put me back on!"
+                </p>
+
+                <div class="pull-quote">
+                    When customers are calling you to pay you? That is a signal.
+                </div>
+
+                <h2 class="section-heading">The Realization</h2>
+                <p class="body-text">
+                    It took me 1.5 years to learn what the farmers already knew on day one.
+                </p>
+                <p class="body-text">
+                    I was an outsider trying to architect a 10G "platform" for a world I didn't live in. I understood the problem on a conceptual level, but the expression of a solution that would work took me a long time to figure out. Meanwhile, the farmers - the insiders - already knew the exact small (1G) problems that were standing in their way. They didn't need a visionary; they needed a builder who would listen.
+                </p>
+
+                <div class="pull-quote">
+                    A feature is only useful if the reward for using it occurs in the same cycle as the effort required to use it.
+                </div>
+
+                <p class="body-text">
+                    I realized that at the start of building new products, a feature is only useful if the reward for using it occurs in the same cycle as the effort required to use it. If a farmer has to keep records in January for a reward in September, they will skip it. But if they get a weather alert today that saves their crop tomorrow? They will pay for that. They were paying for Agency.
+                </p>
+
+                <div class="section-divider"></div>
+
+                <h2 class="section-heading">The Conclusion: Agency and the Stack</h2>
+                <p class="body-text">
+                    Markets can correct themselves if we stack solutions to atomic problems. Solve for weather, solve for market prices, solve for inputs, solve for tools, and eventually, you are solving for the entire value chain - as a cash-flow company where users are voting with their money.
+                </p>
+                <p class="body-text">
+                    Building one solution for one problem and verifying that they will pay for the solution you built - not just the problem you're solving, but the specific solution you built - is the single most distinct factor between success and failure for a new product.
+                </p>
+                <p class="body-text">
+                    Supply chain traceability is still a problem that exists and is still severely painful, but there's a stack of problems in between. Users will pay for solutions to "small stack" problems NOW faster than they will for a problem that doesn't have an immediate one-to-one reward.
+                </p>
+                <p class="body-text">
+                    Eventually, traceability could look like satellite detection where a farmer enters coordinates and it automatically pings suppliers. That one-to-one reward - where my harvest automatically gets me pings from buyers - is something a farmer might pay for. But asking them to track records for six months, to validate quality, for a reward that might never come? That won't work if the stack of problems beneath it remains unsolved.
+                </p>
+
+                <div class="section-divider"></div>
+
+                <h2 class="section-heading">Why Zorentia?</h2>
+                <p class="body-text">
+                    The biggest waste of resources in tech is outsiders trying to "disrupt" markets they don't understand.
+                </p>
+
+                <div class="pull-quote">
+                    The real power happens when you give the insiders the tools and infrastructure they need to build their own solutions.
+                </div>
+
+                <p class="body-text">
+                    I started Zorentia because I realized that the real power happens when you give the insiders - the domain experts who actually live the problem - the tools and infrastructure they need to build their own solutions.
+                </p>
+                <p class="body-text">
+                    The farmers knew the problem was weather and prices and many other stacked problems baked into their day-to-day. They just didn't have the tech to manifest the solution.
+                </p>
+                <p class="body-text">
+                    At Zorentia, we don't try to be the "visionary" for your industry. We provide the technical infrastructure and the 1G methodology to help domain experts ship the solutions they already know their market needs.
+                </p>
+                <p class="body-text">
+                    Supply chain traceability is still a problem, but it's at the top of a stack. You can't solve the big problem until you've solved the stack of small problems beneath it.
+                </p>
+
+                <div class="pull-quote">
+                    Solve for the single stack of problems, and eventually, you will solve for the big problem.
+                </div>
+            </article>
+
+            <div class="section-divider"></div>
+
+            <section class="mb-16">
+                <p class="body-text mb-8">
+                    <a href="index.html" class="link-underline serif-heading text-lg">← Back to resume</a>
+                </p>
+            </section>
+        </main>
+
+        <footer class="px-12 py-8 border-t border-gray-200">
+            <p class="document-meta">© 2025. Built with care.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
